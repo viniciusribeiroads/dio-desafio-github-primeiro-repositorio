@@ -1,0 +1,14 @@
+package application;
+
+import entities.Conta;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conta primeiraConta = new Conta(1200.00, 2483, 7202, "Vinicius Salvador Ribeiro");
+		System.out.println(String.format("R$ %.2f", primeiraConta.getSaldo()));
+		primeiraConta.deposita(1000);
+	}
+
+}
